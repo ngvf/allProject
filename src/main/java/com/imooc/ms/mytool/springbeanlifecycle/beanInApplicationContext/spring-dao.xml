@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+  
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<!-- spring容器 就是负责创建、管理、维护Bean 并且能够依赖注入到相应组件上 -->
+
+	<bean id="helloDaoImpl" class="com.imooc.ms.mytool.springbeanlifecycle.beanInApplicationContext.HelloDaoImpl"
+
+		scope="singleton" lazy-init="false" init-method="init"
+		destroy-method="close">
+
+		<!-- 通过set方法注入 -->
+
+		<property name="content" value="陈老师早上好1212！" />
+
+	</bean>
+
+
+	<!-- BeanPostProcessor与当前的bean都进行关联 -->
+
+	<bean class="com.imooc.ms.mytool.springbeanlifecycle.beanInApplicationContext.BeanPostProcessorImpl" />
+
+
+</beans> 

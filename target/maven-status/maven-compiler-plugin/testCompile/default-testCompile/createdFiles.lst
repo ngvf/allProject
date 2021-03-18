@@ -1,0 +1,13 @@
+test\pattern\bridgePattern\LargeCoffee.class
+test\pattern\bridgePattern\RefinedCoffee.class
+test\pattern\bridgePattern\Milk.class
+test\pattern\buliderPattern\prodocter.class
+com\imooc\ms\AppTest.class
+test\pattern\buliderPattern\Director.class
+test\pattern\buliderPattern\Bulider.class
+test\pattern\bridgePattern\ICoffeeAdditives.class
+test\pattern\buliderPattern\impBulider.class
+test\pattern\bridgePattern\Coffee.class
+test\pattern\bridgePattern\test.class
+test\pattern\bridgePattern\Sugar.class
+test\pattern\buliderPattern\test.class

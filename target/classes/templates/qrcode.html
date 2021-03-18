@@ -1,0 +1,24 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div class="container">
+    <div class="starter-template">
+        <h1>QrCodeImage</h1>
+    </div>
+</div>
+<div class="container">
+	<img alt="qrcode" th:src="@{'/qrimage'}" />
+    <footer>
+        <p>
+            © <a >ThinkingInGIS</a> 2019
+        </p>
+    </footer>
+</div>
+</body>
+</html>
